@@ -1,0 +1,31 @@
+{
+  "name": "Google Meet - Bot",
+  "version": "2.0.1",
+  "icons": { 
+	"16": "icon.png",
+    "48": "icon.png",
+	"128": "icon.png" 
+  },
+  "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
+  "manifest_version": 2,
+  "description": "Enviar presente no google meet sem estar na aula!",
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_title": "Google Meet - Bot",
+   	 "default_popup": "index.html",
+   	 "default_icon": "icon.png"
+  },
+  "permissions": [
+    "storage",
+    "tabs",
+    "activeTab",
+    "<all_urls>",
+	"activeTab",
+	"webNavigation"
+ ]
+}
