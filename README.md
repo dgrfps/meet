@@ -1,6 +1,6 @@
 # Extensão Google Meet - Dar presente automatico  
   
-Para instalar basta baixar os arquivos e deixar em uma pasta.  
+Para instalar basta baixar os [arquivos](https://github.com/dgrfps/meet/releases/tag/1.0.0) e deixar em uma pasta.  
 Acesse: `chrome://extensions` ative o modo de desenvolvedor e carregue uma extensão sem compactação.  
 Selecione a pasta da extensão e click em "selecionar", apos ter carregado a extensão basta procurar pelo icone e fixa-lo.   
       
