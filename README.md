@@ -2,7 +2,7 @@
   
 Para instalar basta baixar os arquivos e deixar em uma pasta.  
 Acesse: `chrome://extensions` ative o modo de desenvolvedor e carregue uma extensão sem compactação.  
-Selecione a pasta da extensão e click em "selecionar", apos ter carregado a extensão basta procurar pelo icone e fixa-lo.  
+Selecione a pasta da extensão e click em "selecionar", apos ter carregado a extensão basta procurar pelo icone e fixa-lo.    
 **Não exclua a pasta apos instalar a extensão!**  
 
 #### Como utilizar a extensão ##  
