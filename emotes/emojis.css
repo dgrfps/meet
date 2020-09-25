@@ -55,7 +55,7 @@
     margin: 5px;
     display: flex;
     flex-wrap: wrap;
-    max-height: 175px;
+    max-height: 155px;
     overflow: hidden;
     overflow-y: auto;
 }

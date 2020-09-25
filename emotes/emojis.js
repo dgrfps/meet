@@ -1,5 +1,3 @@
-var allEmojis = [];
-
 var emojiArea;
 var search;
 
@@ -11,7 +9,6 @@ startEmojis = (emojiAreaID) => {
     
     area.innerHTML = `
         <div id="btsn">
-            <button id="ButtonAreaAll">🧭</button><br>
             <button id="ButtonAreaFace">😀</button><br>
             <button id="ButtonAreaAnim">🐶</button><br>
             <button id="ButtonAreaFood">🍗</button><br>
@@ -26,7 +23,6 @@ startEmojis = (emojiAreaID) => {
                 <p>⚙</p>
             </div>
             <div id="emotr">
-                <p>Loading...</p>
             </div>
         </div>
     `;
@@ -34,7 +30,6 @@ startEmojis = (emojiAreaID) => {
     emojiArea = document.getElementById('emotr');
     search = document.getElementById('searchInput');
 
-    document.getElementById('ButtonAreaAll').addEventListener('click', function(){loadEmojis('todos')});
     document.getElementById('ButtonAreaFace').addEventListener('click', function(){loadEmojis('rostos')});
     document.getElementById('ButtonAreaAnim').addEventListener('click', function(){loadEmojis('animais')});
     document.getElementById('ButtonAreaFood').addEventListener('click', function(){loadEmojis('comidas')});
@@ -43,20 +38,13 @@ startEmojis = (emojiAreaID) => {
     document.getElementById('ButtonAreaObjs').addEventListener('click', function(){loadEmojis('objetos')});
     document.getElementById('ButtonAreaSymb').addEventListener('click', function(){loadEmojis('simbolos')});
     
-    setTimeout(() => {
-        console.log('Loading all emojis!')
+    emojiArea.innerHTML = '';
+    
+    grabHook();
 
-        emojiArea.innerHTML = '';
-        grabHook();
-
-        for(var em = 0; em < allEmojis.length; em ++){
-            emojiArea.innerHTML += `
-                <p>${allEmojis[em]}</p>
-            `;
-        }
-
-        addEventToEmojis();  
-    }, 500);  
+    loadEmojis('rostos');
+    
+    addEventToEmojis();
 }
 
 addEventToEmojis = () => {
@@ -81,14 +69,6 @@ loadEmojis = (type) => {
         emojiArea.innerHTML = '';
         
         switch(type){
-            case "todos":
-                for(var em = 0; em < allEmojis.length; em ++){
-                    emojiArea.innerHTML += `
-                        <p>${allEmojis[em]}</p>
-                    `;
-                }
-                addEventToEmojis();  
-                break;
             case "rostos":
                 for(var em = 0; em < rostosEmojis.length; em ++){
                     emojiArea.innerHTML += `

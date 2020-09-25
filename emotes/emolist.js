@@ -1,6 +1,4 @@
 grabHook = () => {
-    allEmojis = [];
-    
     rostosEmojis = [];
     
     animaisEmojis = [];
@@ -30,14 +28,4 @@ grabHook = () => {
     lugaresEmojis = lugares.split(' ');
     objetosEmojis = objetos.split(' ');
     simbolosEmojis = simbolos.split(' ');
-    
-    
-    allEmojis.push.apply(allEmojis, rostosEmojis);
-    allEmojis.push.apply(allEmojis, animaisEmojis);
-    allEmojis.push.apply(allEmojis, comidasEmojis);
-    allEmojis.push.apply(allEmojis, atividadesEmojis);
-    allEmojis.push.apply(allEmojis, lugaresEmojis);
-    allEmojis.push.apply(allEmojis, objetosEmojis);
-    allEmojis.push.apply(allEmojis, simbolosEmojis);
-
 }
